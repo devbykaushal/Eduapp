@@ -1,0 +1,47 @@
+var option_PDFF = {
+    openPage: 1,
+    height: '100%',
+    enableSound: false,
+    downloadEnable: false, 
+    direction: pdfflip.DIRECTION.LTR,
+    autoPlay: true,
+    autoPlayStart: false,
+    autoPlayDuration: 3000,
+    autoEnableOutline: false,
+    autoEnableThumbnail: false,
+
+    text: {
+      toggleSound: "Sound",
+      toggleThumbnails: "Thumbnails",
+      toggleOutline: "Contents",
+      previousPage: "Previous Page",
+      nextPage: "Next Page",
+      toggleFullscreen: "Fullscreen",
+      zoomIn: "Zoom In",
+      zoomOut: "Zoom Out",
+      downloadPDFFile: "Download PDF",
+      gotoFirstPage: "First Page",
+      gotoLastPage: "Last Page",
+      play: "AutoPlay On",
+      pause: "AutoPlay Off",
+      share: "Share"
+    },
+
+    hard: "none",
+    overwritePDFOutline: true,
+    duration: 500,
+    pageMode: pdfflip.PAGE_MODE.AUTO,
+    singlePageMode: pdfflip.SINGLE_PAGE_MODE.AUTO,
+	  transparent: false,
+	  scrollWheel: true,
+    zoomRatio: 1.5,
+    maxTextureSize: 1600,
+    backgroundImage: "/flipviewer/pflip/background.jpg",
+    backgroundColor: "#fff",
+    controlsPosition: pdfflip.CONTROLSPOSITION.BOTTOM,
+    // allControls: "thumbnail,play,startPage,altPrev,pageNumber,altNext,endPage,zoomIn,zoomOut,fullScreen,download,sound,share",
+    allControls: "thumbnail,startPage,altPrev,pageNumber,altNext,endPage,zoomIn,zoomOut,fullScreen",
+    hideControls: "outline",
+};
+
+var pdfflipLocation = "/flipviewer/pflip/";
