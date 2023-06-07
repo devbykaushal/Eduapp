@@ -139,8 +139,8 @@
                             <li><a href="notifications.html"><i data-feather="bell"></i><span>Notifications</span></a></li> -->
                             <li><a href="/contact.html"><span>Contact</span></a></li>
 
-                            <li class="header">&nbsp;&nbsp;&nbsp;&nbsp;</li>
-                            <!-- <li><a href="blog.html"><i data-feather="file-text"></i><span>Blog</span></a></li> -->
+                            <li class="header text-dark"><em>Study Material &nbsp; &nbsp;<i class="fa fa-arrow-down"></i></em></li>
+                            <li><a href="/UPSC-CSE/"><span>UPSC</span></a></li>
                             
                             <!-- <li class="treeview">
                                 <a href="#">
@@ -149,8 +149,7 @@
                                     <i class="fa fa-angle-right pull-right"></i>
                                     </span>
                                 </a>					
-                                <ul class="treeview-menu">					
-                                    <li><a href="javascript:voild()">UPSC</a></li>
+                                <ul class="treeview-menu">
                                     <li><a href="javascript:voild()">BPSC</a></li>
                                     <li><a href="javascript:voild()">JPSC</a></li>
                                 </ul>
@@ -299,7 +298,7 @@
                 <section class="content">  
                     <div class="row">
                         <div class="col-12">
-                            <div class="box" id="blogcontent" style="font-family: 'Poppins', sans-serif;">
+                            <div class="box" style="font-family: 'Poppins', sans-serif;">
                                 <div class="box-header with-border">
                                     <h2 class="box-title font-500">India and Graphene</h2>
                                 </div>
@@ -380,8 +379,6 @@
 </ol>
                                 </div>
                             </div>
-                            <div id="editor"></div>
-                            <button id="cmd">Genrate</button>
                         </div>
                     </div>
                 </section>
@@ -396,22 +393,6 @@
     </footer>
     <!-- Side panel -->   
 	
-	<script>
-        var doc = new jsPDF();
-        var specialElementHandlers = {
-            '#editor': function (element, renderer) {
-                return true;
-            }
-        };
-
-        $('#cmd').click(function () {
-            doc.fromHTML($('#blogcontent').html(), 15, 15, {
-                'width': 170,
-                'elementHandlers': specialElementHandlers
-            });
-            doc.save('title.pdf');
-        });
-    </script>
 	
 	<!-- Vendor JS -->
 	<script src="/assets/js/vendors.min.js"></script>
@@ -421,6 +402,6 @@
 	<script src="/assets/js/daterangepicker.js"></script>	
 	<script src="/assets/js/template.js"></script>
 	<script src="/assets/js/demo.js"></script>
-	<script src="/assets/js/jspdf.min.js"></script>
+
 </body>
 </html>
